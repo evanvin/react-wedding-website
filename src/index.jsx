@@ -4,6 +4,6 @@ import "./assets/css/bootstrap.min.css";
 import "./assets/css/flexslider.min.css";
 import "./assets/css/theme.css";
 import "./assets/font/font.css";
-import Test from "./components/Test";
+import Site from "./components/Site";
 
-ReactDOM.render(<Test />, document.querySelector("#root"));
+ReactDOM.render(<Site />, document.querySelector("#root"));
