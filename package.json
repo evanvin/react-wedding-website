@@ -1,11 +1,14 @@
 {
-  "name": "react_web",
+  "name": "react-wedding-website",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://evanvin.github.io/react-wedding-website",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -23,9 +26,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.2.1",
     "gh-pages": "^2.1.1"
   }
 }
