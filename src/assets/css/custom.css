@@ -1,5 +1,4 @@
 .password-page {
-  padding: 50px;
   background-color: #eee;
   position: absolute;
   top: 50%;
@@ -23,6 +22,12 @@
   letter-spacing: 2px;
   margin-right: -2px;
   font-family: "Lato";
+}
+
+@media only screen and (max-width: 768px) {
+  .password-page input[type="password"] {
+    width: 100%;
+  }
 }
 
 .password-page input[type="password"]:focus {
