@@ -37,5 +37,5 @@ export const checkCookie = () => {
 };
 
 export const checkPassword = pass => {
-  return passwordHash.verify(pass, hashed);
+  return passwordHash.verify(pass.toLowerCase(), hashed);
 };
