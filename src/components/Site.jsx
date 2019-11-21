@@ -9,21 +9,37 @@ import Gallery from "./sections/Gallery";
 import Things from "./sections/Things";
 import Footer from "./sections/Footer";
 
+import PasswordPage from "./PasswordPage";
+
+import { checkCookie } from "./password";
+
 class Site extends React.Component {
+  handleSuccess = () => {
+    this.forceUpdate();
+  };
+
   render() {
     return (
       <React.Fragment>
-        <Nav />
-        <div className="main-container">
-          <Home />
-          <Wedding />
-          <Accomm />
-          <Story />
-          <Registry />
-          <Gallery />
-          <Things />
-          <Footer />
-        </div>
+        {checkCookie() ? (
+          <React.Fragment>
+            <div className="testtest">
+              <Nav />
+              <div className="main-container">
+                <Home />
+                <Wedding />
+                <Accomm />
+                <Story />
+                <Registry />
+                <Gallery />
+                <Things />
+                <Footer />
+              </div>
+            </div>
+          </React.Fragment>
+        ) : (
+          <PasswordPage handleSuccess={this.handleSuccess} />
+        )}
       </React.Fragment>
     );
   }

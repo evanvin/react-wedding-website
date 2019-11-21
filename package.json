@@ -32,5 +32,9 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.1",
+    "password-hash": "^1.2.2"
   }
 }
