@@ -1,6 +1,6 @@
 import React from "react";
 
-import banner from "../../assets/img/hero1.jpg";
+import banner from "Images/church_street.jpg";
 
 class Footer extends React.Component {
   state = {

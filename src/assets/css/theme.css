@@ -999,7 +999,7 @@ nav.light.scrolled .line-3 {
 }
 .gallery-1 {
   padding: 0;
-  height: 650px;
+  /* height: 750px; */
 }
 .gallery-1 .slides li {
   height: 650px;

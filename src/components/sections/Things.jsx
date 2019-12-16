@@ -30,7 +30,7 @@ class Things extends React.Component {
                   <iframe
                     src="https://batchgeo.com/map/5af464342bdfa0cb762510d65b38bc4f"
                     style={{ frameBorder: "0", width: "100%", height: "750px" }}
-                    frameborder="0"
+                    // frameborder="0"
                   ></iframe>
                 </p>
               </div>

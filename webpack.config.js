@@ -1,4 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
+
 module.exports = {
   module: {
     rules: [
@@ -48,11 +50,15 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"]
+    extensions: ["*", ".js", ".jsx"],
+    alias: {
+      Images: path.resolve(__dirname, "src/assets/img/"),
+      Assets: path.resolve(__dirname, "src/assets/")
+    }
   },
   output: {
     path: __dirname + "/build",
-    publicPath: "./",
+    // publicPath: "./",
     filename: "bundle.js"
   },
   plugins: [

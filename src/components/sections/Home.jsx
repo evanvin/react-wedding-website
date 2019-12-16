@@ -1,6 +1,6 @@
 import React from "react";
 
-import banner from "../../assets/img/hero2.jpg";
+import banner from "Images/paris.jpg";
 
 class Home extends React.Component {
   state = {
@@ -49,13 +49,14 @@ class Home extends React.Component {
             className="background-image-holder fadeIn"
             style={{
               background: `url(${banner}) 50% 50%`,
-              transform: `translateY(${this.state.holderTransformY}px)`
+              // transform: `translateY(${this.state.holderTransformY}px)`
+              transform: `translateY(-100px)`
             }}
           ></div>
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
-                <h1>Evan &amp; Caitlyn</h1>
+                <h1>Caitlyn &amp; Evan</h1>
                 <h6>Join us August 8th for our wedding.</h6>
               </div>
             </div>

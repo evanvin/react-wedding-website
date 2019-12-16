@@ -21,13 +21,13 @@ class Wedding extends React.Component {
             <div className="row">
               <div className="col-md-4 col-md-offset-2 col-sm-6 text-center feature">
                 <h6>Ceremony</h6>
-                <h4>Montrose Vineyard</h4>
+                <h4>Waterworks Food + Drink</h4>
                 <p>
-                  2:30pm - 3:30pm
+                  4:00pm - 4:30pm
                   <br />
-                  65 Chilvers Avenue
+                  20 Winooski Falls Way
                   <br />
-                  Flinders Ranges, Vic
+                  Winooski, VT
                 </p>
                 <a href="#rsvp" className="btn inner-link" target="default">
                   RSVP Here
@@ -36,7 +36,7 @@ class Wedding extends React.Component {
 
               <div className="col-md-4 col-sm-6 text-center feature">
                 <h6>Reception</h6>
-                <h4>Waterworks</h4>
+                <h4>Waterworks Food + Drink</h4>
                 <p>
                   4:30pm - Late
                   <br />

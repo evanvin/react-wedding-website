@@ -1,6 +1,6 @@
 import React from "react";
 
-import banner from "../../assets/img/hero7.jpg";
+import banner from "Images/accommodation.jpg";
 
 class Accomm extends React.Component {
   state = {

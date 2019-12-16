@@ -1,10 +1,9 @@
 import React from "react";
 import Carousel from "nuka-carousel";
 
-import img4 from "../../assets/img/small4.jpg";
-import img3 from "../../assets/img/small3.jpg";
-import img2 from "../../assets/img/small2.jpg";
-import signature from "../../assets/img/signature.png";
+import normal from "Images/story_normal.jpg";
+import abnormal from "Images/story_abnormal.jpg";
+import signature from "Images/signature.png";
 
 class Story extends React.Component {
   render() {
@@ -23,23 +22,22 @@ class Story extends React.Component {
                   renderCenterLeftControls={({ previousSlide }) => <div />}
                   renderCenterRightControls={({ nextSlide }) => <div />}
                 >
-                  <img alt="Photo" src={img4} />
-                  <img alt="Photo" src={img3} />
-                  <img alt="Photo" src={img2} />
+                  <img alt="Photo" src={normal} />
+                  <img alt="Photo" src={abnormal} />
                 </Carousel>
               </div>
             </div>
 
             <div className="row">
               <div className="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
-                <h2>It started with a kiss…</h2>
+                <h2>Do “opposites attract”?</h2>
                 <p>
-                  I guess you could call this a typical "boy meets girl in bar"
-                  story but with a twist! Boy buys girl a drink, girl gives boy
-                  phone number. Two months and several thousand kilometers later
-                  and said boy and girl are head over heels for each other. Fast
-                  forward to today and we're settling down in our first home
-                  ready to tie the knot.
+                  In our case, it could not be more true! Most days and in many
+                  ways, we are polar opposites. Evan is energetic, loud,
+                  outgoing, goofy, and has a love for the holidays. Caitlyn is
+                  epistemophilic, quiet, patient, and has a love for sports.
+                  While Evan loves cooking, Caitlyn loves her Grubhub app. While
+                  Caitlyn loves X, Evan loves Y.
                 </p>
                 <img alt="Signature" src={signature} />
               </div>

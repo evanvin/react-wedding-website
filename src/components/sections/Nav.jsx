@@ -40,7 +40,7 @@ class Nav extends React.Component {
           className={`nav nav-1 transparent light fixed ${scrolled} ${mobile}`}
         >
           <a href="#" className="logo">
-            <span>Evan &amp; Caitlyn</span>
+            <span>Caitlyn &amp; Evan</span>
           </a>
           <ul className="menu">
             {this.createLink("home", "Home")}
