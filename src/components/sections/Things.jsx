@@ -21,7 +21,7 @@ class Things extends React.Component {
               </div>
             </div>
 
-            <div className="row">
+            {/* <div className="row">
               <div className="col-sm-12 text-center">
                 Add map and a food selector quiz HERE. For the map, add best
                 creamie spots, cait's college haunts, best bagel places, hiking
@@ -33,6 +33,13 @@ class Things extends React.Component {
                     // frameborder="0"
                   ></iframe>
                 </p>
+              </div>
+            </div> */}
+
+            <div className="row">
+              <div className="col-sm-12 text-center">
+                Stay tuned: More information on things to do while in Burlington
+                soon to come.
               </div>
             </div>
           </div>

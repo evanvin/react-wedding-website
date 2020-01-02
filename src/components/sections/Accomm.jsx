@@ -58,16 +58,16 @@ class Accomm extends React.Component {
             <div className="row">
               <div className="col-sm-12 text-center">
                 <h2>Travel &amp; Accommodations</h2>
-                <h6>
+                {/* <h6>
                   Mention our names when making your accommodation
                   <br />
                   reservation to receive the group booking discount.
-                </h6>
+                </h6> */}
               </div>
             </div>
 
             <div className="row">
-              <div className="col-md-4 col-sm-6 text-center feature">
+              <div className="col-md-6 col-sm-6 text-center feature">
                 <h4>
                   Burlington International <br />
                   Airport (BTV)
@@ -84,7 +84,25 @@ class Accomm extends React.Component {
                   Info
                 </a>
               </div>
-              <div className="col-md-4 col-sm-6 text-center feature">
+              <div className="col-md-6 col-sm-6 text-center feature">
+                <h4>
+                  Manchester-Boston <br />
+                  Regional Airport (MHT)
+                </h4>
+                <p>
+                  Direct flights to MHT from
+                  <br />
+                  DCA and BWI
+                </p>
+                <a
+                  href="https://www.flymanchester.com/"
+                  className="btn btn-white"
+                  target="default"
+                >
+                  Info
+                </a>
+              </div>
+              {/* <div className="col-md-6 col-sm-6 text-center feature">
                 <h4>Days Inn by Wyndham Colchester Burlington</h4>
                 <p>
                   123 College Parkway
@@ -95,7 +113,7 @@ class Accomm extends React.Component {
                   RSVP Here
                 </a>
               </div>
-              <div className="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center feature">
+              <div className="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center feature">
                 <h4>Hampton Inn by Hilton Colchester</h4>
                 <p>
                   42 Lower Mountain View Drive
@@ -105,6 +123,15 @@ class Accomm extends React.Component {
                 <a href="#rsvp" className="btn btn-white" target="default">
                   RSVP Here
                 </a>
+              </div> */}
+            </div>
+
+            <div className="row">
+              <div className="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
+                <p>
+                  Stay tuned for more information on accommodations. Thank you
+                  for your patience.
+                </p>
               </div>
             </div>
           </div>

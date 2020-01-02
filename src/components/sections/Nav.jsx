@@ -47,7 +47,7 @@ class Nav extends React.Component {
             {this.createLink("wedding", "Wedding")}
             {this.createLink("accomm", "Travel & Accomm")}
             {this.createLink("story", "Story")}
-            {this.createLink("registry", "Registry")}
+            {/* {this.createLink("registry", "Registry")} */}
             {this.createLink("things", "Things To Do")}
           </ul>
           <div className="mobile-toggle" onClick={this.toggleMobile}>

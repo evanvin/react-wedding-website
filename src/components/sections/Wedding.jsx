@@ -23,8 +23,8 @@ class Wedding extends React.Component {
                 <h6>Ceremony</h6>
                 <h4>Waterworks Food + Drink</h4>
                 <p>
-                  4:00pm - 4:30pm
-                  <br />
+                  {/* 4:00pm - 4:30pm
+                  <br /> */}
                   20 Winooski Falls Way
                   <br />
                   Winooski, VT
@@ -38,8 +38,8 @@ class Wedding extends React.Component {
                 <h6>Reception</h6>
                 <h4>Waterworks Food + Drink</h4>
                 <p>
-                  4:30pm - Late
-                  <br />
+                  {/* 4:30pm - Late
+                  <br /> */}
                   20 Winooski Falls Way
                   <br />
                   Winooski, VT
@@ -47,6 +47,15 @@ class Wedding extends React.Component {
                 <a href="#rsvp" className="btn inner-link" target="default">
                   RSVP Here
                 </a>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
+                <p>
+                  Stay tuned for more information on event times. Thank you for
+                  your patience.
+                </p>
               </div>
             </div>
           </div>

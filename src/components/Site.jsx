@@ -30,7 +30,7 @@ class Site extends React.Component {
                 <Wedding />
                 <Accomm />
                 <Story />
-                <Registry />
+                {/* <Registry /> */}
                 <Gallery />
                 <Things />
                 <Footer />

@@ -39,7 +39,7 @@ class Story extends React.Component {
                   While Evan loves cooking, Caitlyn loves her Grubhub app. While
                   Caitlyn loves X, Evan loves Y.
                 </p>
-                <img alt="Signature" src={signature} />
+                {/* <img alt="Signature" src={signature} /> */}
               </div>
             </div>
           </div>
