@@ -1,4 +1,5 @@
 import React from "react";
+import Wizard from "./Wizard/Wizard";
 
 class Things extends React.Component {
   render() {
@@ -35,6 +36,24 @@ class Things extends React.Component {
                 </p>
               </div>
             </div> */}
+
+            {/* Service */}
+            {/* <iframe
+              id="interactApp5e0f5f9d1daba90014f90f56"
+              width="800"
+              height="800"
+              style={{
+                border: "none",
+                maxWidth: "100%",
+                margin: "0",
+                frameBorder: "0",
+                allowTransparency: "true"
+              }}
+              src="https://quiz.tryinteract.com/#/5e0f5f9d1daba90014f90f56?method=iframe"
+            ></iframe> */}
+
+            {/* <Wizard /> */}
+            <br />
 
             <div className="row">
               <div className="col-sm-12 text-center">

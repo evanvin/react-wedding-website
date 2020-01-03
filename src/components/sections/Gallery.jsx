@@ -12,6 +12,9 @@ import taphouse from "Images/maxs_taphouse.jpg";
 import bayforest from "Images/ocean_view.jpg";
 import orioles from "Images/orioles.jpg";
 import ravens from "Images/ravens_pats.jpg";
+import yes from "Images/yes.jpg";
+import car from "Images/car_flannel.jpg";
+import whites from "Images/whites_tree_farm.jpg";
 
 // state = { galleryWidth: window.innerWidth };
 
@@ -41,6 +44,11 @@ const Gallery = () => {
   };
 
   const photos = [
+    {
+      src: yes,
+      width: 3,
+      height: 4
+    },
     {
       src: fells,
       width: 3,
@@ -88,6 +96,16 @@ const Gallery = () => {
     },
     {
       src: orioles,
+      width: 3,
+      height: 4
+    },
+    {
+      src: whites,
+      width: 3,
+      height: 4
+    },
+    {
+      src: car,
       width: 3,
       height: 4
     }

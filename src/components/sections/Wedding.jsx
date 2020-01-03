@@ -29,9 +29,9 @@ class Wedding extends React.Component {
                   <br />
                   Winooski, VT
                 </p>
-                <a href="#rsvp" className="btn inner-link" target="default">
+                {/* <a href="#rsvp" className="btn inner-link" target="default">
                   RSVP Here
-                </a>
+                </a> */}
               </div>
 
               <div className="col-md-4 col-sm-6 text-center feature">
@@ -44,18 +44,15 @@ class Wedding extends React.Component {
                   <br />
                   Winooski, VT
                 </p>
-                <a href="#rsvp" className="btn inner-link" target="default">
+                {/* <a href="#rsvp" className="btn inner-link" target="default">
                   RSVP Here
-                </a>
+                </a> */}
               </div>
             </div>
 
             <div className="row">
               <div className="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
-                <p>
-                  Stay tuned for more information on event times. Thank you for
-                  your patience.
-                </p>
+                <p>Stay tuned for more information on event times.</p>
               </div>
             </div>
           </div>

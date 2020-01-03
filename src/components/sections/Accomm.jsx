@@ -74,7 +74,7 @@ class Accomm extends React.Component {
                 </h4>
                 <p>
                   Direct flights to BTV from DCA, <br />
-                  and several New England airports
+                  IAD, PHL, and several New England airports
                 </p>
                 <a
                   href="https://www.btv.aero/"
@@ -92,7 +92,7 @@ class Accomm extends React.Component {
                 <p>
                   Direct flights to MHT from
                   <br />
-                  DCA and BWI
+                  DCA, IAD, BWI, and PHL
                 </p>
                 <a
                   href="https://www.flymanchester.com/"
@@ -128,10 +128,7 @@ class Accomm extends React.Component {
 
             <div className="row">
               <div className="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
-                <p>
-                  Stay tuned for more information on accommodations. Thank you
-                  for your patience.
-                </p>
+                <p>Stay tuned for more information on accommodations.</p>
               </div>
             </div>
           </div>

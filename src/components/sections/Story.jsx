@@ -3,6 +3,7 @@ import Carousel from "nuka-carousel";
 
 import normal from "Images/story_normal.jpg";
 import abnormal from "Images/story_abnormal.jpg";
+import story from "Images/story.gif";
 import signature from "Images/signature.png";
 
 class Story extends React.Component {
@@ -15,16 +16,19 @@ class Story extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                <Carousel
+                {/* <Carousel
                   className="image-slider"
                   autoplay={true}
+                  wrapAround={true}
+                  autoplayInterval={6000}
                   renderTopCenterControls={({ currentSlide }) => <div />}
                   renderCenterLeftControls={({ previousSlide }) => <div />}
                   renderCenterRightControls={({ nextSlide }) => <div />}
                 >
                   <img alt="Photo" src={normal} />
                   <img alt="Photo" src={abnormal} />
-                </Carousel>
+                </Carousel> */}
+                <img src={story} height={600} />
               </div>
             </div>
 
