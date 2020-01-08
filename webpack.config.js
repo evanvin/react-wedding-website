@@ -67,4 +67,5 @@ module.exports = {
       filename: "./index.html",
       favicon: "./src/assets/img/party.ico"
     })
+  ]
 };
