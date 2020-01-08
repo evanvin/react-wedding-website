@@ -1396,3 +1396,23 @@ footer {
   color: #aaa;
   font-weight: 400;
 }
+
+/*!---------- CLOCK ----------*/
+.clock {
+  /* background-color: #fceee9; */
+  padding: 120px 0 0 0;
+}
+
+.clock-item {
+  margin: 10px 0px 10px 0px;
+  font-family: "Lato", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: #fceee9;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.clock-item h1::after {
+  display: block;
+  font-size: 26px;
+}

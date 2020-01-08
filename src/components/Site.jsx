@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./sections/Nav";
 import Home from "./sections/Home";
+import Clock from "./sections/Clock";
 import Wedding from "./sections/Wedding";
 import Accomm from "./sections/Accomm";
 import Story from "./sections/Story";
@@ -8,14 +9,29 @@ import Registry from "./sections/Registry";
 import Gallery from "./sections/Gallery";
 import Things from "./sections/Things";
 import Footer from "./sections/Footer";
+import Confetti from "react-confetti";
 
 import PasswordPage from "./PasswordPage";
 
 import { checkCookie } from "./password";
 
 class Site extends React.Component {
+  state = { fullHeight: 0, party: false };
+  website = React.createRef();
+
   handleSuccess = () => {
     this.forceUpdate();
+  };
+
+  componentDidMount = () => {
+    const that = this;
+    setTimeout(function() {
+      that.setState({ fullHeight: that.website.current.offsetHeight });
+    }, 1000);
+  };
+
+  isPartyTime = () => {
+    this.setState({ party: true });
   };
 
   render() {
@@ -23,10 +39,22 @@ class Site extends React.Component {
       <React.Fragment>
         {checkCookie() ? (
           <React.Fragment>
-            <div className="testtest">
+            {this.state.party ? (
+              <Confetti
+                numberOfPieces={1500}
+                gravity={0.08}
+                tweenDuration={100}
+                width={window.innerWidth}
+                height={this.state.fullHeight}
+              />
+            ) : null}
+            <div id="website-content" ref={this.website}>
               <Nav />
               <div className="main-container">
                 <Home />
+                {!this.state.party ? (
+                  <Clock isPartyTime={this.isPartyTime} />
+                ) : null}
                 <Wedding />
                 <Accomm />
                 <Story />
