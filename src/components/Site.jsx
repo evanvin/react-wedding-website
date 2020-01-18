@@ -25,7 +25,7 @@ class Site extends React.Component {
 
   componentDidMount = () => {
     const that = this;
-    setTimeout(function() {
+    setTimeout(function () {
       that.setState({ fullHeight: that.website.current.offsetHeight });
     }, 1000);
   };
@@ -60,14 +60,14 @@ class Site extends React.Component {
                 <Story />
                 {/* <Registry /> */}
                 <Gallery />
-                <Things />
+                {/* <Things /> */}
                 <Footer />
               </div>
             </div>
           </React.Fragment>
         ) : (
-          <PasswordPage handleSuccess={this.handleSuccess} />
-        )}
+            <PasswordPage handleSuccess={this.handleSuccess} />
+          )}
       </React.Fragment>
     );
   }

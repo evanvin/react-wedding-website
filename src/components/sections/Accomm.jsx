@@ -73,8 +73,8 @@ class Accomm extends React.Component {
                   Airport (BTV)
                 </h4>
                 <p>
-                  Direct flights to BTV from DCA, <br />
-                  IAD, PHL, and several New England airports
+                  Direct flights to BTV from <br />
+                  DCA, IAD, and PHL
                 </p>
                 <a
                   href="https://www.btv.aero/"
