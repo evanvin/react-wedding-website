@@ -7,7 +7,7 @@ class Things extends React.Component {
       <React.Fragment>
         <a id="things" className="in-page-link"></a>
 
-        <section className="rsvp rsvp-1">
+        <section className="rsvp rsvp-1 things">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
@@ -51,16 +51,16 @@ class Things extends React.Component {
               }}
               src="https://quiz.tryinteract.com/#/5e0f5f9d1daba90014f90f56?method=iframe"
             ></iframe> */}
-
-            {/* <Wizard /> */}
+            <br />
+            <Wizard />
             <br />
 
-            <div className="row">
+            {/* <div className="row">
               <div className="col-sm-12 text-center">
                 Stay tuned: More information on things to do while in Burlington
                 soon to come.
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </React.Fragment>

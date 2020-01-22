@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     name: "Waterfront Park",
     group: "Beautifulness",
@@ -155,24 +155,56 @@ export const data = [
     vegetarianOptions: "Yes"
   },
   {
-    name: "Shelburne Museum",
-    group: "Cool",
-    address: "6000 Shelburne Rd",
-    city: "Shelburne",
+    name: "Burlington Bagel Bakery & Cafe",
+    group: "Breakfast",
+    address: "992 Shelburne Rd",
+    city: "South Burlington",
     state: "VT",
-    zipcode: 5482,
+    zipcode: 5403,
     imageUrl:
-      "https://shelburnemuseum.org/wp-content/uploads/2016/04/Collec_Buildings_PCAE_Primary.jpg"
+      "https://b.zmtcdn.com/data/reviews_photos/2ac/d160a6f106fc9b0dfe3d50bf848522ac.jpg?impolicy=newcropandfit&cropw=480&croph=480&cropoffsetx=32&cropoffsety=0&cropgravity=NorthWest&fitw=200&fith=200&fittype=ignore",
+    menutapList: "https://www.burlingtonbagelbakery.com/south-burlington-menu",
+    portionSize: "Small",
+    goodSelectionOfLibations: "No",
+    cost: "$",
+    time: "<30",
+    sitDown: "Yes",
+    vegetarianOptions: "Yes"
   },
   {
-    name: "Ben & Jerry’s Factory Tour",
-    group: "Cool",
-    address: "1281 Waterbury-Stowe Rd, VT-100",
-    city: "Waterbury Village Historic District",
+    name: "Burlington Bagel Bakery & Cafe",
+    group: "Breakfast",
+    address: "93 Church St",
+    city: "Burlington",
     state: "VT",
-    zipcode: 5676,
+    zipcode: 5401,
     imageUrl:
-      "https://www.benjerry.com/files/live/sites/systemsite/files/whats-new/1803-awesome-waterbury-eats/1803-factory-blog.jpg"
+      "https://www.gannett-cdn.com/presto/2019/02/07/PBUR/79921e64-4418-46b7-b817-ca16b9f933dc-IMG_0214.JPG?width=520&height=390&fit=bounds&auto=webp",
+    menutapList:
+      "https://www.burlingtonbagelbakery.com/south-burlington-menu-2",
+    portionSize: "Small",
+    goodSelectionOfLibations: "No",
+    cost: "$",
+    time: "<30",
+    sitDown: "Yes",
+    vegetarianOptions: "Yes"
+  },
+  {
+    name: "Willows",
+    group: "Breakfast",
+    address: "71 South Union St",
+    city: "Burlington",
+    state: "VT",
+    zipcode: 5401,
+    imageUrl: "https://www.willowsbagels.com/assets/header1-large.jpg",
+    menutapList: "https://www.willowsbagels.com/sample-menu",
+    portionSize: "Small",
+    goodSelectionOfLibations: "No",
+    cost: "$",
+    time: "<30",
+    sitDown: "Yes",
+    vegetarianOptions: "Yes",
+    topPersonalRecommendation: "Both"
   },
   {
     name: "Foam Brewers",
@@ -219,7 +251,7 @@ export const data = [
     zipcode: 5672,
     imageUrl: "https://alchemistbeer.com/wp-content/uploads/2017/07/art-6.jpg",
     menutapList: "https://alchemistbeer.com/",
-    caitsFavoriteBeer: "Heady Topper / Focal Banger",
+    caitsFavoriteBeer: "Focal Banger",
     evansFavoriteBeer: "Heady Topper"
   },
   {
@@ -232,7 +264,8 @@ export const data = [
     imageUrl:
       "https://fiddleheadbrewing.com/wp-content/uploads/2018/09/TR_3-800x600.jpg",
     menutapList: "https://fiddleheadbrewing.com/",
-    caitsFavoriteBeer: "Second Fiddle"
+    caitsFavoriteBeer: "Second Fiddle",
+    evansFavoriteBeer: "Fiddlehead"
   },
   {
     name: "Citizen Cider",
@@ -254,8 +287,7 @@ export const data = [
     zipcode: 5401,
     imageUrl:
       "https://media1.fdncms.com/sevendaysvt/imager/u/original/20349479/whatsgood13-12.jpg",
-    menutapList: "http://www.queencitybrewery.com/",
-    topPersonalRecommendation: "Evan"
+    menutapList: "http://www.queencitybrewery.com/"
   },
   {
     name: "Frost Beer Works",
@@ -267,7 +299,8 @@ export const data = [
     imageUrl:
       "https://www.frostbeerworks.com/wp-content/uploads/2016/02/cropped-cropped-FBW-B_W-Logo-w_VT-1.png",
     menutapList: "https://www.frostbeerworks.com/taproom/",
-    evansFavoriteBeer: "Lush DIPA"
+    caitsFavoriteBeer: "Plush",
+    evansFavoriteBeer: "Lush"
   },
   {
     name: "von Trapp Brewery & Bierhall",
@@ -293,6 +326,31 @@ export const data = [
     topPersonalRecommendation: "Caity"
   },
   {
+    name: "The Whiskey Room",
+    group: "Drinkery",
+    address: "173 College St",
+    city: "Burlington",
+    state: "VT",
+    zipcode: 5401,
+    imageUrl:
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/55/21/d5/the-great-whiskey-room.jpg",
+    goodSelectionOfLibations: "Yes",
+    topPersonalRecommendation: "Caity"
+  },
+  {
+    name: "Burlington Beer Company",
+    group: "Drinkery",
+    address: "25 Omega Dr #150",
+    city: "Williston",
+    state: "VT",
+    zipcode: 5495,
+    imageUrl:
+      "https://newengland.com/wp-content/uploads/FavoriteBreweriesBurlingtonVT3-780x518.jpg",
+    menutapList: "http://burlingtonbeercompany.com/",
+    goodSelectionOfLibations: "Yes",
+    topPersonalRecommendation: "Evan"
+  },
+  {
     name: "Prohibition Pig",
     group: "Food",
     address: "23 S Main St",
@@ -307,7 +365,8 @@ export const data = [
     cost: "$$",
     time: "30-60",
     sitDown: "Yes",
-    vegetarianOptions: "Yes"
+    vegetarianOptions: "Yes",
+    evansFavoriteBeer: "Sublimated Dreams"
   },
   {
     name: "The Farmhouse Tap & Grill",
@@ -391,14 +450,15 @@ export const data = [
     imageUrl:
       "https://d253b1eioa5z7b.cloudfront.net/venue_images/medium_570ca8cb-3bdd-45f9-a0c2-c807d2a1c237.jpg",
     menutapList: "https://www.tinythairestaurant.net/Menu/menu.html",
-    note: "BYOB",
     portionSize: "Large",
     goodSelectionOfLibations: "No",
     cost: "$",
     time: "30-60",
     sitDown: "Yes",
     vegetarianOptions: "Yes",
-    topPersonalRecommendation: "Caity"
+    topPersonalRecommendation: "Caity",
+    note:
+      "BYOB. Tiny Thai does not serve alcohol, but they do allow you to Bring Your Own Beverages."
   },
   {
     name: "The Pour House",
@@ -454,6 +514,33 @@ export const data = [
     topPersonalRecommendation: "Evan"
   },
   {
+    name: "Grazers",
+    group: "Food",
+    address: "192 Boxwood St",
+    city: "Williston",
+    state: "VT",
+    zipcode: 5495,
+    imageUrl:
+      "https://media-cdn.tripadvisor.com/media/photo-s/07/07/2b/c8/grazers.jpg",
+    menutapList: "https://www.grazersvt.com/williston",
+    portionSize: "Medium",
+    goodSelectionOfLibations: "Yes",
+    cost: "$$",
+    time: "30-60",
+    sitDown: "Yes",
+    vegetarianOptions: "Yes"
+  },
+  {
+    name: "Ben & Jerry’s Factory Tour",
+    group: "Fun",
+    address: "1281 Waterbury-Stowe Rd, VT-100",
+    city: "Waterbury Village Historic District",
+    state: "VT",
+    zipcode: 5676,
+    imageUrl:
+      "https://www.benjerry.com/files/live/sites/systemsite/files/whats-new/1803-awesome-waterbury-eats/1803-factory-blog.jpg"
+  },
+  {
     name: "Mule Bar",
     group: "Gastropub",
     address: "38 Main St",
@@ -489,11 +576,61 @@ export const data = [
   },
   {
     name: "Mt. Philo",
-    group: "Hiking"
+    group: "Hiking",
+    address: "5425 Mt Philo Rd",
+    city: "Charlotte",
+    state: "VT",
+    zipcode: 5445,
+    imageUrl:
+      "https://cdn-assets.alltrails.com/uploads/photo/image/10385791/extra_large_8ce1d680779930de37e3e47460bef322.jpg"
   },
   {
     name: "Camel's Hump",
-    group: "Hiking"
+    group: "Hiking",
+    address: "3461 Camels Hump Rd",
+    city: "Huntington",
+    state: "VT",
+    zipcode: 5462,
+    imageUrl:
+      "https://lorenphotos.com/wp-content/uploads/2017/08/Toward-Camels-Hump8229.jpg"
+  },
+  {
+    name: "Mt. Mansfield",
+    group: "Hiking",
+    address: "352 Mountain Rd",
+    city: "Underhill",
+    state: "VT",
+    zipcode: 5489,
+    imageUrl:
+      "https://cdn.britannica.com/29/117929-004-66D46B2C/Mount-Mansfield-Burlington-Vt.jpg"
+  },
+  {
+    name: "Sterling Pond",
+    group: "Hiking",
+    address: "Mountain Rd",
+    city: "Jeffersonville",
+    state: "VT",
+    zipcode: 5464,
+    imageUrl:
+      "https://i.pinimg.com/originals/49/76/8a/49768ac3e006514035d92cf03d38c5ae.jpg"
+  },
+  {
+    name: "Burlington Bike Paths",
+    group: "Hiking",
+    city: "Burlington",
+    state: "VT",
+    zipcode: 5401,
+    imageUrl: "https://enjoyburlington.com/type/recreational-paths-trails/"
+  },
+  {
+    name: "Lake Champlain Community Sailing Center",
+    group: "Hiking",
+    address: "505 Lake St",
+    city: "Burlington",
+    state: "VT",
+    zipcode: 5401,
+    imageUrl:
+      "https://img.marinas.com/v2/204f577e6aa8683ac437537a7beb7c33140b425e79620febee943a935c1687b7.jpg"
   },
   {
     name: "Church Street Market",
@@ -506,14 +643,16 @@ export const data = [
       "http://nedderealestate.com/wp-content/uploads/2013/05/Slideshow-Photo7.jpg"
   },
   {
-    name: "Pure Pop Records",
+    name: "Maple Tree Place",
     group: "Shopping",
-    address: "115 S Winooski Ave",
-    city: "Burlington",
+    address: "28 Walnut St",
+    city: "Williston",
     state: "VT",
-    zipcode: 5401,
+    zipcode: 5495,
     imageUrl:
-      "https://fastly.4sqi.net/img/general/600x600/38778915_HoPB_iNEqLFxnneNmnt5EWfQfafMJNhY7hduW-ZGDDw.jpg",
-    topPersonalRecommendation: "Evan"
+      "http://www.willistonobserver.com/wp-content/uploads/2016/11/FRONTPIX-Maple-Tree-Place.jpg",
+    note: "https://www.shopmapletreeplace.com/en/directory/"
   }
 ];
+
+export default data;

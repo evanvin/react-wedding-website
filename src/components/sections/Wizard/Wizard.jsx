@@ -1,172 +1,76 @@
 import React from "react";
-import FontAwesome from "react-fontawesome";
-import { data } from "../things.js";
+import { data } from "./things.js";
+import * as Q from "./Questions";
+import { Animated } from "react-animated-css";
+import Carousel from "nuka-carousel";
 
 class Wizard extends React.Component {
-  state = { question: 1, q1Choice: null };
+  state = { question: 1, q1Choice: null, showResults: false, results: [] };
 
-  onQuestionOnePick = choice => {
-    console.log(choice);
+  onQuestionOneSelection = q1Choice => {
+    let question = 2;
+
+    if (q1Choice == "What are you looking to do?") {
+      question = 1;
+      q1Choice = null;
+    }
+
+    this.setState({
+      question,
+      q1Choice
+    });
+  };
+
+  resultsReady = results => {
+    this.setState({ showResults: true, results });
+  };
+
+  selectQuestionSet = choice => {
+    return <Q.Question resultsReady={this.resultsReady} choice={choice} />;
   };
 
   render() {
+    const { q1Choice, showResults, results } = this.state;
+
     return (
       <div className="wizard">
-        <a href="#rsvp" className="btn btn-white" target="default">
-          RSVP Here
-        </a>
-        {/* <select>
-          <option>Test</option>
-        </select> */}
-        <Questions />
+        <div className="row">
+          <div className="col-md-8 col-md-offset-2 col-xs-12">
+            <Q.One onSelect={this.onQuestionOneSelection} />
+          </div>
+        </div>
+        <br />
+        {q1Choice && (
+          <div className="row">
+            <div className="col-md-10 col-md-offset-1 col-xs-12">
+              <Animated isVisible={q1Choice != null} animationIn="fadeIn">
+                {this.selectQuestionSet(q1Choice)}
+              </Animated>
+            </div>
+          </div>
+        )}
+        <br />
+        {showResults && (
+          <div className="row">
+            <div className="col-md-10 col-md-offset-1 col-xs-12">
+              <Animated isVisible={true} animationIn="fadeIn">
+                <Carousel slidesToShow={3}>
+                  {results.map(item => {
+                    return (
+                      <div>
+                        <h2>{item.name}</h2>
+                        <img src={item.imageUrl} />
+                      </div>
+                    );
+                  })}
+                </Carousel>
+              </Animated>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
 }
 
 export default Wizard;
-
-class Questions extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      fruit: [
-        {
-          id: 0,
-          title: "Apple",
-          selected: false,
-          key: "fruit"
-        },
-        {
-          id: 1,
-          title: "Orange",
-          selected: false,
-          key: "fruit"
-        },
-        {
-          id: 2,
-          title: "Grape",
-          selected: false,
-          key: "fruit"
-        },
-        {
-          id: 3,
-          title: "Pomegranate",
-          selected: false,
-          key: "fruit"
-        },
-        {
-          id: 4,
-          title: "Strawberry",
-          selected: false,
-          key: "fruit"
-        }
-      ]
-    };
-  }
-
-  toggleSelected = (id, key) => {
-    let temp = JSON.parse(JSON.stringify(this.state[key]));
-    temp[id].selected = !temp[id].selected;
-    this.setState({
-      [key]: temp
-    });
-  };
-
-  resetThenSet = (id, key) => {
-    let temp = JSON.parse(JSON.stringify(this.state[key]));
-    temp.forEach(item => (item.selected = false));
-    temp[id].selected = true;
-    this.setState({
-      [key]: temp
-    });
-  };
-
-  render() {
-    return (
-      <Dropdown
-        title="What are you looking for?"
-        list={this.state.fruit}
-        resetThenSet={this.resetThenSet}
-      />
-    );
-  }
-}
-
-class Dropdown extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      listOpen: false,
-      headerTitle: this.props.title
-    };
-    this.close = this.close.bind(this);
-  }
-
-  componentDidUpdate() {
-    const { listOpen } = this.state;
-    setTimeout(() => {
-      if (listOpen) {
-        window.addEventListener("click", this.close);
-      } else {
-        window.removeEventListener("click", this.close);
-      }
-    }, 0);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("click", this.close);
-  }
-
-  close(timeOut) {
-    this.setState({
-      listOpen: false
-    });
-  }
-
-  selectItem(title, id, stateKey) {
-    this.setState(
-      {
-        headerTitle: title,
-        listOpen: false
-      },
-      this.props.resetThenSet(id, stateKey)
-    );
-  }
-
-  toggleList() {
-    this.setState(prevState => ({
-      listOpen: !prevState.listOpen
-    }));
-  }
-
-  render() {
-    const { list } = this.props;
-    const { listOpen, headerTitle } = this.state;
-    return (
-      <div className="dd-wrapper">
-        <div className="dd-header" onClick={() => this.toggleList()}>
-          <div className="dd-header-title">{headerTitle}</div>
-          {listOpen ? (
-            <FontAwesome name="angle-up" size="2x" />
-          ) : (
-            <FontAwesome name="angle-down" size="2x" />
-          )}
-        </div>
-        {listOpen && (
-          <ul className="dd-list" onClick={e => e.stopPropagation()}>
-            {list.map(item => (
-              <li
-                className="dd-list-item"
-                key={item.id}
-                onClick={() => this.selectItem(item.title, item.id, item.key)}
-              >
-                {item.title} {item.selected && <FontAwesome name="check" />}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    );
-  }
-}

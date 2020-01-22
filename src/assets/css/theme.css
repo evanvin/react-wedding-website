@@ -1416,3 +1416,8 @@ footer {
   display: block;
   font-size: 26px;
 }
+
+/*!---------- THINGS ----------*/
+section.things .container {
+  z-index: 14;
+}
