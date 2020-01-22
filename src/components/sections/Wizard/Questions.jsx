@@ -151,7 +151,7 @@ class Eat extends React.Component {
 }
 
 class Drink extends React.Component {
-  render() {
+  componentDidMount() {
     let drinkData = data.filter(item => {
       return ["Drinkery", "Gastropub"].includes(item.group);
     });
@@ -164,26 +164,32 @@ class Drink extends React.Component {
     );
 
     this.props.resultsReady(drinkData);
+  }
+  render() {
     return null;
   }
 }
 
 class Explore extends React.Component {
-  render() {
+  componentDidMount() {
     const exploreData = data.filter(item => {
       return ["Beautifulness", "Fun", "Hiking"].includes(item.group);
     });
     this.props.resultsReady(exploreData);
+  }
+  render() {
     return null;
   }
 }
 
 class Shop extends React.Component {
-  render() {
+  componentDidMount() {
     const shopData = data.filter(item => {
       return ["Shopping"].includes(item.group);
     });
     this.props.resultsReady(shopData);
+  }
+  render() {
     return null;
   }
 }

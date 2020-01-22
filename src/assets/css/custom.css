@@ -179,7 +179,7 @@
   width: 100%;
   border-radius: 5px;
   padding: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -194,6 +194,7 @@
   position: relative;
   margin: auto;
   width: 80%;
+  margin-bottom: 20px;
 }
 .dd-header {
   display: -webkit-box;
@@ -311,4 +312,65 @@
 
 .eat-section > div {
   margin-bottom: 25px;
+}
+
+/* --------------- THINGS CARDS --------------- */
+.info_card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+}
+.media {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+figure {
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* figure:hover .media {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+} */
+figcaption {
+  padding: 10px;
+  background-color: white;
+  color: #252830;
+  height: calc(100% - 30px);
+  margin: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+.caption_body {
+  background-color: white;
+  bottom: 0;
+  font-size: 12px;
+  padding: 15px;
+  position: absolute;
+  /* width: 100%; */
+}
+
+.caption_body > p {
+  margin-bottom: 5px !important;
+}
+
+@media (max-width: 410px) {
+  figcaption {
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    width: 250px;
+  }
 }

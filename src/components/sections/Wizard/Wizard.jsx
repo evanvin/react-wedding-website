@@ -9,19 +9,23 @@ class Wizard extends React.Component {
 
   onQuestionOneSelection = q1Choice => {
     let question = 2;
+    let showResults = this.state.showResults;
 
     if (q1Choice == "What are you looking to do?") {
       question = 1;
       q1Choice = null;
+      showResults = false;
     }
 
     this.setState({
       question,
-      q1Choice
+      q1Choice,
+      showResults
     });
   };
 
   resultsReady = results => {
+    console.log(results);
     this.setState({ showResults: true, results });
   };
 
@@ -54,12 +58,71 @@ class Wizard extends React.Component {
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-xs-12">
               <Animated isVisible={true} animationIn="fadeIn">
-                <Carousel slidesToShow={3}>
+                <Carousel>
                   {results.map(item => {
                     return (
-                      <div>
-                        <h2>{item.name}</h2>
-                        <img src={item.imageUrl} />
+                      <div className="cinfo_card">
+                        <div className="col-lg-12">
+                          <figure>
+                            <div
+                              className="media"
+                              style={{
+                                backgroundImage: `url(${item.imageUrl})`
+                              }}
+                            ></div>
+                            <figcaption>
+                              <div className="title">{item.name}</div>
+                              {/* <svg
+                                viewBox="0 0 200 200"
+                                version="1.1"
+                                preserveAspectRatio="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <defs>
+                                  <mask
+                                    id="mask"
+                                    x="0"
+                                    y="0"
+                                    width="100%"
+                                    height="100%"
+                                  >
+                                    <rect
+                                      id="alpha"
+                                      x="0"
+                                      y="0"
+                                      width="100%"
+                                      height="100%"
+                                    ></rect>
+                                    <text className="title" dx="50%" dy="2.5em">
+                                      {item.group}
+                                    </text>
+                                    <text
+                                      className="title name"
+                                      dx="50%"
+                                      dy="3.5em"
+                                    >
+                                      {item.name}
+                                    </text>
+                                  </mask>
+                                </defs>
+                                <rect
+                                  id="base"
+                                  x="0"
+                                  y="0"
+                                  width="100%"
+                                  height="100%"
+                                ></rect>
+                              </svg> */}
+                              <div className="caption_body">
+                                <p>
+                                  Enamel pin selvage health goth edison bulb,
+                                  venmo glossier tattooed hella butcher cred
+                                  iPhone.
+                                </p>
+                              </div>
+                            </figcaption>
+                          </figure>
+                        </div>
                       </div>
                     );
                   })}
