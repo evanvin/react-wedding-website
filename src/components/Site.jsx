@@ -60,7 +60,7 @@ class Site extends React.Component {
                 <Story />
                 {/* <Registry /> */}
                 <Gallery />
-                {/* <Things /> */}
+                <Things />
                 <Footer />
               </div>
             </div>

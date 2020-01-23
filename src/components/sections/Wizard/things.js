@@ -297,7 +297,7 @@ const data = [
     state: "VT",
     zipcode: 5461,
     imageUrl:
-      "https://www.frostbeerworks.com/wp-content/uploads/2016/02/cropped-cropped-FBW-B_W-Logo-w_VT-1.png",
+      "https://media1.fdncms.com/sevendaysvt/imager/u/original/16089703/food1-6-7b6708238eb74be2.jpg",
     menutapList: "https://www.frostbeerworks.com/taproom/",
     caitsFavoriteBeer: "Plush",
     evansFavoriteBeer: "Lush"
@@ -332,8 +332,7 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
-    imageUrl:
-      "https://media-cdn.tripadvisor.com/media/photo-s/08/55/21/d5/the-great-whiskey-room.jpg",
+    imageUrl: "https://eventective-media.azureedge.net/2466434_lg.jpg",
     goodSelectionOfLibations: "Yes",
     topPersonalRecommendation: "Caity"
   },
@@ -431,7 +430,7 @@ const data = [
     state: "VT",
     zipcode: 5401,
     imageUrl:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sevendaysvt.com%2Fvermont%2Fspot-on-the-dock-opening-delayed-by-flooding%2FContent%3Foid%3D27541310&psig=AOvVaw3d_pDMKg-yvBmnSSkXFbIm&ust=1576611439796000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIC78Lj1uuYCFQAAAAAdAAAAABAD",
+      "https://media2.fdncms.com/sevendaysvt/imager/u/original/7564957/whatsgood10-10-779d46acbd86356f.jpg",
     menutapList: "https://www.spotonthedock.com/#Menus",
     portionSize: "Large",
     goodSelectionOfLibations: "Yes",
@@ -458,7 +457,7 @@ const data = [
     vegetarianOptions: "Yes",
     topPersonalRecommendation: "Caity",
     note:
-      "BYOB. Tiny Thai does not serve alcohol, but they do allow you to Bring Your Own Beverages."
+      "BYOB. Tiny Thai does not serve alcohol,<br/> but they do allow you to Bring Your Own Beverages."
   },
   {
     name: "The Pour House",

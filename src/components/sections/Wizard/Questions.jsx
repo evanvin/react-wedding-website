@@ -26,23 +26,28 @@ class One extends React.Component {
     ];
 
     return (
-      <Dropdown list={list} onSelect={onSelect} questionTitle={"questionOne"} />
+      <Dropdown
+        key="question-one-dropdown"
+        list={list}
+        onSelect={onSelect}
+        questionTitle={"questionOne"}
+      />
     );
   }
 }
 
 class Question extends React.Component {
   render() {
-    const { choice, resultsReady } = this.props;
+    const { choice, resultsReady, reset } = this.props;
     switch (choice) {
       case "Eat":
-        return <Eat resultsReady={resultsReady} />;
+        return <Eat key="eat" resultsReady={resultsReady} reset={reset} />;
       case "Drink":
-        return <Drink resultsReady={resultsReady} />;
+        return <Drink key="drink" resultsReady={resultsReady} />;
       case "Explore":
-        return <Explore resultsReady={resultsReady} />;
+        return <Explore key="explore" resultsReady={resultsReady} />;
       case "Shop":
-        return <Shop resultsReady={resultsReady} />;
+        return <Shop key="shop" resultsReady={resultsReady} />;
       default:
         break;
     }
@@ -54,7 +59,7 @@ class Eat extends React.Component {
   state = { choices: {}, breakfast: null };
 
   getResults = () => {
-    const { options, breakfast } = this.state;
+    const { choices, breakfast } = this.state;
     let categories = ["Gastropub", "Food"];
     if (breakfast == null) {
       categories.push("Breakfast");
@@ -65,18 +70,18 @@ class Eat extends React.Component {
     let eatData = data.filter(item => {
       return categories.includes(item.group);
     });
-    eatData = _.filter(eatData, options);
+    eatData = _.filter(eatData, choices);
     this.props.resultsReady(eatData);
   };
 
   onSelect = (choice, questionTitle, idx) => {
-    let { options } = this.state;
+    let { choices } = this.state;
 
     if (idx == 0) {
       if (questionTitle == "breakfast") {
         this.setState({ breakfast: null });
       } else {
-        delete options[questionTitle];
+        delete choices[questionTitle];
       }
     } else {
       if (questionTitle != "breakfast") {
@@ -87,12 +92,12 @@ class Eat extends React.Component {
         ) {
           choice = FOOD_VALUE_KEY[choice];
         }
-        options = Object.assign({ [questionTitle]: choice }, options);
+        choices = Object.assign({ [questionTitle]: choice }, choices);
       } else {
         this.setState({ breakfast: choice == "Yes" });
       }
     }
-    this.setState({ options });
+    this.setState({ choices });
   };
 
   render() {
@@ -100,6 +105,7 @@ class Eat extends React.Component {
       <div className="eat-section">
         <div className="col-md-6 col-xs-12">
           <Dropdown
+            key="portionSize"
             list={["Hunger Level", "I could eat", "Pretty hungry", "Hangry"]}
             questionTitle="portionSize"
             onSelect={this.onSelect}
@@ -107,6 +113,7 @@ class Eat extends React.Component {
         </div>
         <div className="col-md-6 col-xs-12">
           <Dropdown
+            key="goodSelectionOfLibations"
             list={["Drink Variety", "The Basics", "All the Options"]}
             questionTitle="goodSelectionOfLibations"
             onSelect={this.onSelect}
@@ -114,6 +121,7 @@ class Eat extends React.Component {
         </div>
         <div className="col-md-6 col-xs-12">
           <Dropdown
+            key="cost"
             list={["Cost", "$", "$$", "$$$"]}
             questionTitle="cost"
             onSelect={this.onSelect}
@@ -121,13 +129,15 @@ class Eat extends React.Component {
         </div>
         <div className="col-md-6 col-xs-12">
           <Dropdown
+            key="time"
+            list={["Time", "Real Quick", "Some time to kill", "Nowhere to be"]}
             questionTitle="time"
             onSelect={this.onSelect}
-            list={["Time", "Real Quick", "Some time to kill", "Nowhere to be"]}
           />
         </div>
         <div className="col-md-6 col-xs-12">
           <Dropdown
+            key="breakfast"
             list={["Breakfast", "Yes", "No"]}
             questionTitle="breakfast"
             onSelect={this.onSelect}
@@ -135,14 +145,20 @@ class Eat extends React.Component {
         </div>
         <div className="col-md-6 col-xs-12">
           <Dropdown
-            list={["Vegetarian Options", "Yes", "No"]}
+            key="vegetarianOptions"
+            list={["Vegetarian", "Yes", "No"]}
             questionTitle="vegetarianOptions"
             onSelect={this.onSelect}
           />
         </div>
-        <div className="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+        <div className="col-md-4 col-md-offset-2 col-xs-12">
           <div className="btn" onClick={this.getResults}>
             Show Results
+          </div>
+        </div>
+        <div className="col-md-4 col-xs-12">
+          <div className="btn" onClick={this.props.reset}>
+            Reset
           </div>
         </div>
       </div>
