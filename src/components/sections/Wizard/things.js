@@ -6,8 +6,11 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4802101999999,
+    longitude: -73.2213235,
     imageUrl:
-      "https://vermontbiz.com/files/burlington_waterfront_water_works_park_boardwalk_june_2019_s.jpg"
+      "https://vermontbiz.com/files/burlington_waterfront_water_works_park_boardwalk_june_2019_s.jpg",
+    menutapList: "https://enjoyburlington.com/place/waterfront-park-2/"
   },
   {
     name: "University of Vermont",
@@ -16,8 +19,11 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5405,
+    latitude: 44.47848,
+    longitude: -73.193973,
     imageUrl:
-      "https://assets.change.org/photos/1/fi/ed/nGFIeDbxhsPJSVP-800x450-noPad.jpg?1486622386"
+      "https://assets.change.org/photos/1/fi/ed/nGFIeDbxhsPJSVP-800x450-noPad.jpg?1486622386",
+    menutapList: "http://www.uvm.edu/map/"
   },
   {
     name: "von Trapp Brewery & Bierhall",
@@ -26,8 +32,12 @@ const data = [
     city: "Stowe",
     state: "VT",
     zipcode: 5672,
+    latitude: 44.4704194,
+    longitude: -72.7352264,
     imageUrl:
-      "https://i0.wp.com/www.vtattractions.org/wp-content/uploads/2018/09/Bierhall_Inside-1200x800.png?resize=600%2C400&ssl=1"
+      "https://i0.wp.com/www.vtattractions.org/wp-content/uploads/2018/09/Bierhall_Inside-1200x800.png?resize=600%2C400&ssl=1",
+    menutapList:
+      "https://www.vontrappbrewing.com/von-trapp-lagers-and-beers.htm"
   },
   {
     name: "Penny Cluse Cafe",
@@ -36,6 +46,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.479171,
+    longitude: -73.211376,
     imageUrl:
       "https://media1.fdncms.com/sevendaysvt/imager/u/original/15379464/food1-5-4941702bbe4b576b.jpg",
     menutapList:
@@ -55,6 +67,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4756941,
+    longitude: -73.2129507,
     imageUrl:
       "http://kountrykartdeli.com/wp-content/uploads/2012/08/kkdfront.jpg",
     menutapList:
@@ -74,6 +88,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4592412,
+    longitude: -73.2077733,
     imageUrl:
       "https://media1.fdncms.com/sevendaysvt/imager/taste-test-the-spot/u/zoom/2274993/food-thespot2.jpg",
     menutapList: "https://www.thespotvt.com/food/",
@@ -91,6 +107,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4775107,
+    longitude: -73.2196579,
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/532b00b1e4b0ccd5fa53c6a9/1526066088091-BIQ671F68PIQROZOM1HZ/ke17ZwdGBToddI8pDm48kA47qaxzGU3oa60Mv3IrElh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hGaawTDWlunVGEFKwsEdnE_ZbuhWuTjDl9Hn0Vaidb23CyzgPgNZ_l0zINYXrCLdg/1G4A0060_cropped+feature.jpg",
     menutapList:
@@ -109,6 +127,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4773682999999,
+    longitude: -73.2138992,
     imageUrl:
       "https://arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/AQCHGIW4FYI6PH6GGJUFTSRXGM.jpg",
     menutapList: "https://thefriendlytoast.com/menu/",
@@ -127,6 +147,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.476108,
+    longitude: -73.2114735,
     imageUrl:
       "https://media-cdn.tripadvisor.com/media/photo-s/0d/45/09/ff/inside.jpg",
     menutapList: "http://www.mirabellescafe.com/",
@@ -144,6 +166,8 @@ const data = [
     city: "Winooski",
     state: "VT",
     zipcode: 5404,
+    latitude: 44.4904324,
+    longitude: -73.1866766,
     imageUrl:
       "https://www.gannett-cdn.com/-mm-/48fad074c4548d29d3c382c4cb369213f6067ad0/c=0-300-3264-2141/local/-/media/Burlington/2014/08/27/bur0826sneakersbaconcontroversy1.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp",
     menutapList: "http://www.sneakersbistro.com/",
@@ -161,6 +185,8 @@ const data = [
     city: "South Burlington",
     state: "VT",
     zipcode: 5403,
+    latitude: 44.4417864,
+    longitude: -73.2093702,
     imageUrl:
       "https://b.zmtcdn.com/data/reviews_photos/2ac/d160a6f106fc9b0dfe3d50bf848522ac.jpg?impolicy=newcropandfit&cropw=480&croph=480&cropoffsetx=32&cropoffsety=0&cropgravity=NorthWest&fitw=200&fith=200&fittype=ignore",
     menutapList: "https://www.burlingtonbagelbakery.com/south-burlington-menu",
@@ -178,6 +204,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4777569,
+    longitude: -73.212812,
     imageUrl:
       "https://www.gannett-cdn.com/presto/2019/02/07/PBUR/79921e64-4418-46b7-b817-ca16b9f933dc-IMG_0214.JPG?width=520&height=390&fit=bounds&auto=webp",
     menutapList:
@@ -196,6 +224,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4782069,
+    longitude: -73.2095228,
     imageUrl: "https://www.willowsbagels.com/assets/header1-large.jpg",
     menutapList: "https://www.willowsbagels.com/sample-menu",
     portionSize: "Small",
@@ -213,6 +243,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4791946,
+    longitude: -73.219999,
     imageUrl:
       "http://brewsviewsandreviews.com/wp-content/uploads/2018/05/Foam.jpg",
     menutapList: "http://www.foambrewers.com/"
@@ -224,6 +256,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4561947,
+    longitude: -73.2208057,
     imageUrl:
       "https://www.vermontbrewers.com/wp-content/uploads/2016/09/Tap-Room-at-Switchback-1024x714.jpg",
     menutapList: "https://www.switchbackvt.com/the-beer"
@@ -235,6 +269,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4595834,
+    longitude: -73.2138433,
     imageUrl:
       "https://imbibemagazine.com/wp-content/uploads/2016/04/March-24th-2016-6.jpg",
     menutapList: "http://zerogravitybeer.com/pine-street-brewery/#menu",
@@ -249,6 +285,8 @@ const data = [
     city: "Stowe",
     state: "VT",
     zipcode: 5672,
+    latitude: 44.4764215,
+    longitude: -72.716466,
     imageUrl: "https://alchemistbeer.com/wp-content/uploads/2017/07/art-6.jpg",
     menutapList: "https://alchemistbeer.com/",
     caitsFavoriteBeer: "Focal Banger",
@@ -261,6 +299,8 @@ const data = [
     city: "Shelburne",
     state: "VT",
     zipcode: 5482,
+    latitude: 44.3661574,
+    longitude: -73.2325827,
     imageUrl:
       "https://fiddleheadbrewing.com/wp-content/uploads/2018/09/TR_3-800x600.jpg",
     menutapList: "https://fiddleheadbrewing.com/",
@@ -274,6 +314,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4706803,
+    longitude: -73.214242,
     imageUrl:
       "https://www.citizencider.com/wp-content/uploads/2014/11/Tasting-Room-Full1-920x450.jpg",
     menutapList: "https://www.citizencider.com/ciders/"
@@ -285,6 +327,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4595231,
+    longitude: -73.2151605999999,
     imageUrl:
       "https://media1.fdncms.com/sevendaysvt/imager/u/original/20349479/whatsgood13-12.jpg",
     menutapList: "http://www.queencitybrewery.com/"
@@ -296,6 +340,8 @@ const data = [
     city: "Hinesburg",
     state: "VT",
     zipcode: 5461,
+    latitude: 44.3353646,
+    longitude: -73.1089792,
     imageUrl:
       "https://media1.fdncms.com/sevendaysvt/imager/u/original/16089703/food1-6-7b6708238eb74be2.jpg",
     menutapList: "https://www.frostbeerworks.com/taproom/",
@@ -309,6 +355,8 @@ const data = [
     city: "Stowe",
     state: "VT",
     zipcode: 5672,
+    latitude: 44.4704194,
+    longitude: -72.7352264,
     imageUrl:
       "https://i0.wp.com/www.vtattractions.org/wp-content/uploads/2018/09/Bierhall_Inside-1200x800.png?resize=600%2C400&ssl=1",
     menutapList:
@@ -321,8 +369,11 @@ const data = [
     city: "Shelburne",
     state: "VT",
     zipcode: 5482,
+    latitude: 44.3664226,
+    longitude: -73.2338534,
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/56c5f2c801dbae7a6df49198/1493834505256-9CHKODE6A25GT3IYU94Z/ke17ZwdGBToddI8pDm48kPqQfq0L3n3wpHIsRapTfg8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKczo5Zn4xktlpMsMj-QlHXeMfNK6GwvtVkYEWiR8XAPyD3GfLCe_DXOSC_YcAacWL_/20100726_Vineyard-9150.jpg?format=1500w",
+    menutapList: "https://www.shelburnevineyard.com/tastings-tours",
     topPersonalRecommendation: "Caity"
   },
   {
@@ -332,8 +383,11 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.476948,
+    longitude: -73.212949,
     imageUrl: "https://eventective-media.azureedge.net/2466434_lg.jpg",
-    goodSelectionOfLibations: "Yes",
+    menutapList:
+      "https://www.tripadvisor.com/Restaurant_Review-g57201-d2715435-Reviews-Whiskey_Room-Burlington_Vermont.html",
     topPersonalRecommendation: "Caity"
   },
   {
@@ -343,10 +397,11 @@ const data = [
     city: "Williston",
     state: "VT",
     zipcode: 5495,
+    latitude: 44.4478379,
+    longitude: -73.1258977,
     imageUrl:
       "https://newengland.com/wp-content/uploads/FavoriteBreweriesBurlingtonVT3-780x518.jpg",
     menutapList: "http://burlingtonbeercompany.com/",
-    goodSelectionOfLibations: "Yes",
     topPersonalRecommendation: "Evan"
   },
   {
@@ -356,6 +411,8 @@ const data = [
     city: "Waterbury Village Historic District",
     state: "VT",
     zipcode: 5676,
+    latitude: 44.337145,
+    longitude: -72.7561432,
     imageUrl:
       "https://www.travelikealocalvt.com/wp-content/uploads/2014/10/prohibition-pig-facade1.jpg",
     menutapList: "http://prohibitionpig.com/",
@@ -374,6 +431,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.478403,
+    longitude: -73.2133049999999,
     imageUrl:
       "https://cdn.beeradvocate.com/assets/uploads/2016/02/94Barkeep-820x564.jpg",
     menutapList: "http://www.farmhousetg.com/menus/",
@@ -392,6 +451,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4772188,
+    longitude: -73.2127848,
     imageUrl:
       "https://s3-media3.fl.yelpcdn.com/bphoto/jBEodOehBR2Y_pbEvPOjeQ/l.jpg",
     menutapList: "https://www.leunigsbistro.com/dinner-2",
@@ -410,6 +471,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4765434,
+    longitude: -73.2142966,
     imageUrl:
       "http://americanflatbread.com/wp-content/uploads/2014/01/IMG_014-960x500.jpg",
     menutapList:
@@ -429,6 +492,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.474869,
+    longitude: -73.2200309999999,
     imageUrl:
       "https://media2.fdncms.com/sevendaysvt/imager/u/original/7564957/whatsgood10-10-779d46acbd86356f.jpg",
     menutapList: "https://www.spotonthedock.com/#Menus",
@@ -446,6 +511,8 @@ const data = [
     city: "Winooski",
     state: "VT",
     zipcode: 5404,
+    latitude: 44.4903306,
+    longitude: -73.1867381,
     imageUrl:
       "https://d253b1eioa5z7b.cloudfront.net/venue_images/medium_570ca8cb-3bdd-45f9-a0c2-c807d2a1c237.jpg",
     menutapList: "https://www.tinythairestaurant.net/Menu/menu.html",
@@ -466,6 +533,8 @@ const data = [
     city: "South Burlington",
     state: "VT",
     zipcode: 5403,
+    latitude: 44.4612944,
+    longitude: -73.1500073,
     imageUrl:
       "https://s3-media1.fl.yelpcdn.com/bphoto/bJBdHJOI2LiI-qYzbTeeOQ/o.jpg",
     menutapList:
@@ -484,6 +553,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4800149999999,
+    longitude: -73.2125949,
     imageUrl:
       "https://www.halvorsonsupstreetcafe.com/assets/IMG-0632-large.jpg",
     menutapList: "https://www.halvorsonsupstreetcafe.com/",
@@ -501,6 +572,8 @@ const data = [
     city: "Shelburne",
     state: "VT",
     zipcode: 5482,
+    latitude: 44.3661574,
+    longitude: -73.2325827,
     imageUrl:
       "https://www.gannett-cdn.com/-mm-/6d46f0a03148c87ce3989a311abc6d55d0153ee9/c=0-302-3264-2146/local/-/media/2017/03/09/Burlington/Burlington/636246595735590895-folino.jpg?width=3200&height=1680&fit=crop",
     menutapList: "https://www.folinopizza.com/our-pizzas",
@@ -519,6 +592,8 @@ const data = [
     city: "Williston",
     state: "VT",
     zipcode: 5495,
+    latitude: 44.4457873,
+    longitude: -73.1098562999999,
     imageUrl:
       "https://media-cdn.tripadvisor.com/media/photo-s/07/07/2b/c8/grazers.jpg",
     menutapList: "https://www.grazersvt.com/williston",
@@ -536,8 +611,11 @@ const data = [
     city: "Waterbury Village Historic District",
     state: "VT",
     zipcode: 5676,
+    latitude: 44.3528528999999,
+    longitude: -72.740253,
     imageUrl:
-      "https://www.benjerry.com/files/live/sites/systemsite/files/whats-new/1803-awesome-waterbury-eats/1803-factory-blog.jpg"
+      "https://www.benjerry.com/files/live/sites/systemsite/files/whats-new/1803-awesome-waterbury-eats/1803-factory-blog.jpg",
+    menutapList: "https://www.benjerry.com/waterbury"
   },
   {
     name: "Mule Bar",
@@ -546,6 +624,8 @@ const data = [
     city: "Winooski",
     state: "VT",
     zipcode: 5404,
+    latitude: 44.4906233,
+    longitude: -73.1867151,
     imageUrl:
       "https://images.squarespace-cdn.com/content/v1/5adf7eee4eddecb0eaa74ccc/1525391181954-6KJ6Y36JT1AXM0B8DA1L/ke17ZwdGBToddI8pDm48kM4prmS89RNpAUSE3F3b7fsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcN1n1f-aHp8CmNmfJv-EXV__kdcRNu2R0j5Vzli9rEE6gO83Mglh_2caPNE63Y7oG/mulebar-13ag_CLB4772-sh.jpg",
     menutapList: "https://www.mulebarvt.com/menu",
@@ -563,6 +643,8 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4755088,
+    longitude: -73.2137142,
     imageUrl:
       "https://static.wixstatic.com/media/dbd8b2_394bb623ae844b91a026ae4b3e7fd49b~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_560,h_308,al_c,q_80,usm_0.66_1.00_0.01/dbd8b2_394bb623ae844b91a026ae4b3e7fd49b~mv2_d_5472_3648_s_4_2.webp",
     menutapList: "http://gryphonvt.com/#menu",
@@ -580,8 +662,11 @@ const data = [
     city: "Charlotte",
     state: "VT",
     zipcode: 5445,
+    latitude: 44.2778094,
+    longitude: -73.2233609,
     imageUrl:
-      "https://cdn-assets.alltrails.com/uploads/photo/image/10385791/extra_large_8ce1d680779930de37e3e47460bef322.jpg"
+      "https://cdn-assets.alltrails.com/uploads/photo/image/10385791/extra_large_8ce1d680779930de37e3e47460bef322.jpg",
+    menutapList: "https://vtstateparks.com/philo.html"
   },
   {
     name: "Camel's Hump",
@@ -590,8 +675,11 @@ const data = [
     city: "Huntington",
     state: "VT",
     zipcode: 5462,
+    latitude: 44.3043059,
+    longitude: -72.909052,
     imageUrl:
-      "https://lorenphotos.com/wp-content/uploads/2017/08/Toward-Camels-Hump8229.jpg"
+      "https://lorenphotos.com/wp-content/uploads/2017/08/Toward-Camels-Hump8229.jpg",
+    menutapList: "https://vtstateparks.com/camelshump.html"
   },
   {
     name: "Mt. Mansfield",
@@ -600,8 +688,11 @@ const data = [
     city: "Underhill",
     state: "VT",
     zipcode: 5489,
+    latitude: 44.5291416,
+    longitude: -72.8431272999999,
     imageUrl:
-      "https://cdn.britannica.com/29/117929-004-66D46B2C/Mount-Mansfield-Burlington-Vt.jpg"
+      "https://cdn.britannica.com/29/117929-004-66D46B2C/Mount-Mansfield-Burlington-Vt.jpg",
+    menutapList: "https://vtstateparks.com/underhill.html"
   },
   {
     name: "Sterling Pond",
@@ -610,8 +701,12 @@ const data = [
     city: "Jeffersonville",
     state: "VT",
     zipcode: 5464,
+    latitude: 44.5573848,
+    longitude: -72.7901469999999,
     imageUrl:
-      "https://i.pinimg.com/originals/49/76/8a/49768ac3e006514035d92cf03d38c5ae.jpg"
+      "https://i.pinimg.com/originals/49/76/8a/49768ac3e006514035d92cf03d38c5ae.jpg",
+    menutapList:
+      "https://www.theoutbound.com/vermont/hiking/hiking-to-vermont-s-sterling-pond"
   },
   {
     name: "Burlington Bike Paths",
@@ -619,7 +714,11 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
-    imageUrl: "https://enjoyburlington.com/type/recreational-paths-trails/"
+    latitude: 44.4758442,
+    longitude: -73.212121,
+    imageUrl:
+      "https://media2.fdncms.com/sevendaysvt/imager/u/original/3507217/bikepath-summer-jwb.jpg",
+    menutapList: "https://enjoyburlington.com/type/recreational-paths-trails/"
   },
   {
     name: "Lake Champlain Community Sailing Center",
@@ -628,8 +727,11 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4824226,
+    longitude: -73.222606,
     imageUrl:
-      "https://img.marinas.com/v2/204f577e6aa8683ac437537a7beb7c33140b425e79620febee943a935c1687b7.jpg"
+      "https://img.marinas.com/v2/204f577e6aa8683ac437537a7beb7c33140b425e79620febee943a935c1687b7.jpg",
+    menutapList: "https://communitysailingcenter.org/rentals-storage/"
   },
   {
     name: "Church Street Market",
@@ -638,8 +740,11 @@ const data = [
     city: "Burlington",
     state: "VT",
     zipcode: 5401,
+    latitude: 44.4802125999999,
+    longitude: -73.212516,
     imageUrl:
-      "http://nedderealestate.com/wp-content/uploads/2013/05/Slideshow-Photo7.jpg"
+      "http://nedderealestate.com/wp-content/uploads/2013/05/Slideshow-Photo7.jpg",
+    menutapList: "https://www.churchstmarketplace.com/"
   },
   {
     name: "Maple Tree Place",
@@ -648,9 +753,11 @@ const data = [
     city: "Williston",
     state: "VT",
     zipcode: 5495,
+    latitude: 44.4451585,
+    longitude: -73.1092446,
     imageUrl:
       "http://www.willistonobserver.com/wp-content/uploads/2016/11/FRONTPIX-Maple-Tree-Place.jpg",
-    note: "https://www.shopmapletreeplace.com/en/directory/"
+    menutapList: "https://www.shopmapletreeplace.com/en/directory/"
   }
 ];
 
