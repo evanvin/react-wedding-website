@@ -587,7 +587,7 @@ input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 @media only screen and (max-width: 600px) {
-  .wedding-modal input {
+  .wedding-modal input[type=text], .wedding-modal input[type=submit] {
     width: 100%;
   }
 }
