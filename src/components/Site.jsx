@@ -14,10 +14,10 @@ import Covid from "./sections/Covid";
 
 import PasswordPage from "./PasswordPage";
 
-import { checkCookie } from "./password";
+import { checkCookie, checkCovidCookie } from "./password";
 
 class Site extends React.Component {
-  state = { fullHeight: 0, party: false, showCovid: true };
+  state = { fullHeight: 0, party: false, showCovid: !checkCovidCookie() };
   website = React.createRef();
 
   handleSuccess = () => {

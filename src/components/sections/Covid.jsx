@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import Modal from '../ui/Modal'
+import Modal from '../ui/Modal';
+import { createCovidCookie } from "../password";
 
 const Covid = (props) => {
     const [modalIsOpen, setModalIsOpen] = useState(true);
+    const [formData, setFormData] = useState({});
 
     const onOpen = () => {
         setModalIsOpen(true);
@@ -13,9 +15,34 @@ const Covid = (props) => {
         props.covid(false)
     };
 
-    const sendData = () => {
+    const handleInput = e => {
+        const copyFormData = { ...formData };
+        copyFormData[e.target.name] = e.target.value;
+        setFormData(copyFormData);
+    };
 
-    }
+    const sendData = async e => {
+        e.preventDefault();
+        const { name, emailAddress } = formData
+        try {
+            const response = await fetch(
+                "https://v1.nocodeapi.com/evanvin/google_sheets/tYighHjedzwoDprq?tabId=email_addresses",
+                {
+                    method: "post",
+                    body: JSON.stringify([[name, emailAddress]]),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                }
+            );
+            const json = await response.json();
+            createCovidCookie();
+            document.getElementById("covid-form").reset();
+            onClose();
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
 
     return (
         <React.Fragment>
@@ -26,9 +53,9 @@ const Covid = (props) => {
                 <p>If you would like updates about our wedding, please provide your email below. Thank you!</p>
                 <p>♥ Cait & Evan</p>
                 <br />
-                <form class="form-section" onSubmit={sendData}>
-                    <input type="text" name="name" placeholder="Name" required />
-                    <input type="text" name="email-address" placeholder="Email Address" required />
+                <form className="form-section" id="covid-form" onSubmit={sendData}>
+                    <input type="text" name="name" placeholder="Name" required onChange={handleInput} />
+                    <input type="text" name="emailAddress" placeholder="Email Address" required onChange={handleInput} />
                     <input type="submit" value="UPDATE ME" />
                 </form>
             </Modal>

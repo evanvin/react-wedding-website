@@ -7,5 +7,6 @@ import "Assets/font/font.css";
 import "Assets/css/custom.css";
 import "Assets/css/animate.css";
 import Site from "./components/Site";
+import "regenerator-runtime/runtime";
 
 ReactDOM.render(<Site />, document.querySelector("#root"));

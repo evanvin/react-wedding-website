@@ -2,14 +2,24 @@ import Cookies from "js-cookie";
 import passwordHash from "password-hash";
 const hashed = "sha1$41856d60$1$eb1e8dc762f9df078a280cc98eb2e65b8641dcf1";
 const COOKIE_KEY = "bishiguerra-wedding";
+const COVID_COOKEY = 'bishiguerra-wedding-covid';
 
 const uuid = () => {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
     var r = (Math.random() * 16) | 0,
       v = c == "x" ? r : (r & 0x3) | 0x8;
     return v.toString(16);
   });
 };
+
+export const createCovidCookie = () => {
+  Cookies.set(COVID_COOKEY, 'true');
+}
+
+export const checkCovidCookie = () => {
+  const cookies = Cookies.get();
+  return cookies[COVID_COOKEY] != undefined;
+}
 
 const isValidCookie = cookie => {
   const parts = cookie.split(".");
