@@ -38,6 +38,7 @@ const Covid = (props) => {
             const json = await response.json();
             createCovidCookie();
             document.getElementById("covid-form").reset();
+            document.body.style.overflow = 'visible';
             onClose();
         } catch (error) {
             console.error("Error:", error);
