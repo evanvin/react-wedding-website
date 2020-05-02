@@ -16,19 +16,6 @@ import yes from "Images/yes.jpg";
 import car from "Images/car_flannel.jpg";
 import whites from "Images/whites_tree_farm.jpg";
 
-// state = { galleryWidth: window.innerWidth };
-
-// handleWindowResize = () => {
-//   this.setState({ galleryWidth: window.innerWidth });
-// };
-
-// componentDidMount() {
-//   window.addEventListener("resize", this.handleWindowResize);
-// }
-
-// componentWillUnmount() {
-//   window.removeEventListener("resize", this.handleWindowResize);
-// }
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

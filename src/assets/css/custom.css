@@ -384,14 +384,7 @@ figcaption.things_caption a:hover {
 }
 .hr-text:before {
   content: "";
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(transparent),
-    color-stop(black),
-    to(transparent)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(black), to(transparent));
   background: linear-gradient(to right, transparent, black, transparent);
   position: absolute;
   left: 0;
@@ -485,15 +478,11 @@ figcaption.things_caption a:hover {
   border-radius: 50%;
   left: 0;
   top: -3px;
-  -webkit-transition: left 0.3s ease, background 0.3s ease,
+  -webkit-transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease, transform 0.1s ease;
+  transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease, transform 0.1s ease,
     -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
-  transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 0.1s ease,
-    -webkit-transform 0.1s ease;
-  transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease,
-    transform 0.1s ease;
-  transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease,
-    transform 0.1s ease, -webkit-box-shadow 0.1s ease,
-    -webkit-transform 0.1s ease;
 }
 
 .switch label .lever:before {
@@ -502,10 +491,10 @@ figcaption.things_caption a:hover {
 
 .switch label .lever:after {
   background-color: #f1f1f1;
-  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 input[type="checkbox"]:checked:not(:disabled) ~ .lever:active::before,
@@ -530,4 +519,79 @@ input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::before {
 .switch label input[type="checkbox"][disabled] + .lever:after,
 .switch label input[type="checkbox"][disabled]:checked + .lever:after {
   background-color: #949494;
+}
+
+.wedding-modal {
+  position: absolute;
+  z-index: 99; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.wedding-modal > .content {
+  background-color: #fceee9;
+  font-family: "Lato", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.wedding-modal br {
+  display: block !important;
+}
+
+.wedding-modal input[type="submit"] {
+  border: 1px solid #75c5b1;
+  background-color: #75c5b1;
+  color: #fff;
+  text-align: center;
+  width: 40%;
+  height: 55px;
+  line-height: 53px;
+  text-transform: uppercase;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 0;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.wedding-modal input[type="text"] {
+  height: 55px;
+  display: block;
+  background: #fcfcfc;
+  border: 1px solid #d6d6d6;
+  width: 40%;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: auto;
+  margin-bottom: 5px;
+  font-family: "Lato";
+}
+.wedding-modal input[type="text"]:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .wedding-modal input {
+    width: 100%;
+  }
+}
+
+.wedding-modal .form-section {
+  margin-bottom: 25px;
 }

@@ -10,13 +10,14 @@ import Gallery from "./sections/Gallery";
 import Things from "./sections/Things";
 import Footer from "./sections/Footer";
 import Confetti from "react-confetti";
+import Covid from "./sections/Covid";
 
 import PasswordPage from "./PasswordPage";
 
 import { checkCookie } from "./password";
 
 class Site extends React.Component {
-  state = { fullHeight: 0, party: false };
+  state = { fullHeight: 0, party: false, showCovid: true };
   website = React.createRef();
 
   handleSuccess = () => {
@@ -34,6 +35,12 @@ class Site extends React.Component {
     this.setState({ party: true });
   };
 
+  covid = (flag) =>{
+    console.log(flag)
+    console.log(this.state.showCovid)
+    this.setState({showCovid: flag})
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -49,16 +56,17 @@ class Site extends React.Component {
               />
             ) : null}
             <div id="website-content" ref={this.website}>
-              <Nav />
+              <Nav covid={this.covid}/>
               <div className="main-container">
                 <Home />
                 {!this.state.party ? (
                   <Clock isPartyTime={this.isPartyTime} />
                 ) : null}
+                {this.state.showCovid && <Covid covid={this.covid} showCovid={this.state.showCovid}/>}
                 <Wedding />
                 <Accomm />
+                <Registry />
                 <Story />
-                {/* <Registry /> */}
                 <Gallery />
                 <Things />
                 <Footer />
