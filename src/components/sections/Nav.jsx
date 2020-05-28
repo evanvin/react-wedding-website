@@ -44,11 +44,11 @@ class Nav extends React.Component {
           </a>
           <ul className="menu">
             {this.createLink("home", "Home")}
-            {this.createLink("wedding", "Wedding")}
+            {/* {this.createLink("wedding", "Wedding")}
             {this.createLink("accomm", "Travel & Accomm")}
-            {this.createLink("registry", "Registry")}
+            {this.createLink("registry", "Registry")} */}
             {this.createLink("story", "Story")}
-            {this.createLink("things", "Things To Do")}
+            {/* {this.createLink("things", "Things To Do")} */}
             <li>
               <a href="#" onClick={e=> this.props.covid(true)}>COVID</a>
             </li>

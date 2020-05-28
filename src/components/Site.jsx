@@ -46,7 +46,7 @@ class Site extends React.Component {
       <React.Fragment>
         {checkCookie() ? (
           <React.Fragment>
-            {this.state.party ? (
+            {/* {this.state.party ? (
               <Confetti
                 numberOfPieces={1500}
                 gravity={0.08}
@@ -54,21 +54,21 @@ class Site extends React.Component {
                 width={window.innerWidth}
                 height={this.state.fullHeight}
               />
-            ) : null}
+            ) : null} */}
             <div id="website-content" ref={this.website}>
               <Nav covid={this.covid}/>
               <div className="main-container">
                 <Home />
-                {!this.state.party ? (
+                {/* {!this.state.party ? (
                   <Clock isPartyTime={this.isPartyTime} />
-                ) : null}
+                ) : null} */}
                 {this.state.showCovid && <Covid covid={this.covid} showCovid={this.state.showCovid}/>}
-                <Wedding />
+                {/* <Wedding />
                 <Accomm />
-                <Registry />
+                <Registry /> */}
                 <Story />
                 <Gallery />
-                <Things />
+                {/* <Things /> */}
                 <Footer />
               </div>
             </div>

@@ -57,7 +57,7 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-sm-12 text-center">
                 <h1>Caitlyn &amp; Evan</h1>
-                <h6>Join us August 8th for our wedding.</h6>
+                {/* <h6>Join us August 8th for our wedding.</h6> */}
               </div>
             </div>
           </div>
