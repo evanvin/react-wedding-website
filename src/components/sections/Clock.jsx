@@ -42,7 +42,6 @@ class Clock extends React.Component {
             <div className="col-sm-12 text-center">
               <Countdown
                 date={"8/8/2020"}
-                // date={Date.now() + 5000}
                 renderer={this.renderer}
                 onComplete={this.props.isPartyTime}
               />

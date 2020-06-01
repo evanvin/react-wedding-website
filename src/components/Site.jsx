@@ -26,7 +26,7 @@ class Site extends React.Component {
 
   componentDidMount = () => {
     const that = this;
-    setTimeout(function() {
+    setTimeout(() => {
       that.setState({ fullHeight: that.website.current.offsetHeight });
     }, 1000);
   };
@@ -35,18 +35,16 @@ class Site extends React.Component {
     this.setState({ party: true });
   };
 
-  covid = (flag) =>{
-    console.log(flag)
-    console.log(this.state.showCovid)
-    this.setState({showCovid: flag})
-  }
+  covid = (flag) => {
+    this.setState({ showCovid: flag });
+  };
 
   render() {
     return (
       <React.Fragment>
         {checkCookie() ? (
           <React.Fragment>
-            {/* {this.state.party ? (
+            {this.state.party ? (
               <Confetti
                 numberOfPieces={1500}
                 gravity={0.08}
@@ -54,19 +52,21 @@ class Site extends React.Component {
                 width={window.innerWidth}
                 height={this.state.fullHeight}
               />
-            ) : null} */}
+            ) : null}
             <div id="website-content" ref={this.website}>
-              <Nav covid={this.covid}/>
+              <Nav covid={this.covid} />
               <div className="main-container">
                 <Home />
-                {/* {!this.state.party ? (
+                {!this.state.party ? (
                   <Clock isPartyTime={this.isPartyTime} />
-                ) : null} */}
-                {this.state.showCovid && <Covid covid={this.covid} showCovid={this.state.showCovid}/>}
+                ) : null}
+                {this.state.showCovid && (
+                  <Covid covid={this.covid} showCovid={this.state.showCovid} />
+                )}
                 {/* <Wedding />
-                <Accomm />
-                <Registry /> */}
+                <Accomm /> */}
                 <Story />
+                <Registry />
                 <Gallery />
                 {/* <Things /> */}
                 <Footer />

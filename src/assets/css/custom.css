@@ -533,7 +533,7 @@ input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .wedding-modal {
-  position: absolute;
+  position: fixed;
   z-index: 99; /* Sit on top */
   left: 0;
   top: 0;
