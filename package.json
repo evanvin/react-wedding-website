@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "password-hash": "^1.2.2",
     "react-animated-css": "^1.2.1",
     "react-confetti": "^5.0.1",
